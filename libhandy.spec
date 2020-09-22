@@ -8,13 +8,14 @@ Summary:	Library with GTK+ widgets for mobile phones
 Summary(pl.UTF-8):	Biblioteka z kontrolkami GTK+ dla telefonów komórkowych
 Name:		libhandy
 Version:	0.0.13
-Release:	3
+Release:	4
 License:	LGPL v2.1+
 Group:		Libraries
 #Source0Download: https://source.puri.sm/Librem5/libhandy/-/tags
 Source0:	https://source.puri.sm/Librem5/libhandy/-/archive/v%{version}/%{name}-v%{version}.tar.bz2
 # Source0-md5:	932ba6e80908c7579fa0392d6e0d0ceb
 Patch0:		%{name}-glade3.36.patch
+Patch1:		%{name}-glade3.38.patch
 URL:		https://source.puri.sm/Librem5/libhandy/
 # -std=gnu11
 BuildRequires:	gcc >= 6:4.7
@@ -100,6 +101,7 @@ API języka VALA do biblioteki libhandy.
 %prep
 %setup -q -n %{name}-v%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %meson build \
