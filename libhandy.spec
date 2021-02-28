@@ -72,9 +72,7 @@ Moduł libhandy dla Glade.
 Summary:	API documentation for libhandy library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libhandy
 Group:		Documentation
-%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for libhandy library.
@@ -88,9 +86,7 @@ Summary(pl.UTF-8):	API języka Vala do bibliotek libhandy
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	vala >= 2:0.16.0
-%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
-%endif
 
 %description -n vala-libhandy
 Vala API for libhandy library.
