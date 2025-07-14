@@ -96,8 +96,8 @@ API języka VALA do biblioteki libhandy.
 
 %prep
 %setup -q -n %{name}-v%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 %meson build \
