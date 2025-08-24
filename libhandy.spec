@@ -27,7 +27,7 @@ BuildRequires:	gtk-doc
 BuildRequires:	meson >= 0.49.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 %{?with_vala:BuildRequires:	vala >= 2:0.27.0}
 Requires:	glib2 >= 1:2.44
 Requires:	gtk+3 >= 3.24.1
